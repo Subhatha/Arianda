@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="book-wrap">
+        <div id="cover" class="book-cover" onclick="openBook()">
+            <div class="spine"></div>
+            <div class="cover-design">
+                <span class="gold-ornament">❦</span>
+                <h1>To My Wife</h1>
+                <div class="heart-seal">❤</div>
+                <p class="click-to-open">Open Our Story</p>
+                <span class="gold-ornament">❦</span>
+            </div>
+        </div>
+
+        <main id="main-content" class="book-inside">
+            <div class="paper-texture"></div>
+            
+            <nav class="tabs">
+                <button class="tab-btn active" onclick="showTab(event, 'memories')">Memories</button>
+                <button class="tab-btn" onclick="showTab(event, 'letter')">Letter</button>
+                <button class="tab-btn" onclick="showTab(event, 'reasons')">Why You</button>
+                <button class="tab-btn" onclick="showTab(event, 'date')">Invitation</button>
+            </nav>
+
+            <div class="scroll-container">
+                <article id="memories" class="tab-content active">
+                    <h2 class="script-font">You are so cute</h2>
+                    
+                    <div class="media-frame">
+                        <img src="assets/1.jpg" alt="Memory 1">
+                        <p class="caption">One of my favourite photo of you</p>
+                    </div>
+
+
+                    <div class="media-frame">
+                        <img src="assets/2.jpg" alt="Memory 2">
+                        <p class="caption">You are awesome  🥺</p>
+                    </div>
+                    <div class="media-frame">
+                        <img src="assets/3.jpg" alt="Memory 3">
+                        <p class="caption">Be mine forever</p>
+                    </div>
+                </article>
+
+                <article id="letter" class="tab-content">
+                    <h2 class="script-font">To, Love of my life</h2>
+                    <div class="handwritten-letter">
+                        <p> My love. ❤️
+                     
+                        You are my today and my forever. 💕
+                         </p>
+                        
+                        <div class="media-frame small">
+                            <img src="assets/4.jpg" alt="Image 3">
+                            <p class="caption">an angel ❤️🥺</p>
+                        </div>
+
+                        <p class="big-question">Will you be mine forever?</p>
+                        <p class="signature">Forever yours, <br> Subhatha</p>
+                    </div>
+                </article>
+
+                <article id="reasons" class="tab-content">
+                    <h2 class="script-font">Why I Love You</h2>
+                    <ul class="reasons-list">
+                        <li>You are the anchor for the people you love.</li>
+                        <li>You make my hard days easier and my good days brighter .</li>
+                        <li>Being with you feels like home, you are my dragging force to come home.</li>
+                        <li>You are my calm and chaos at same time.</li>
+                    </ul>
+                    <div class="media-frame">
+                        <img src="assets/5.jpg" alt="Image 4">
+                        <p class="caption">Your days will get brighter and brighter</p>
+                    </div>
+                </article>
+
+                <article id="date" class="tab-content">
+                    <h2 class="script-font">Save the Date</h2>
+                    <div class="invitation-box">
+                        <p class="date-text"><strong>When:</strong> August 30th @ Lunch time</p>
+                        <p class="date-text"><strong>Where:</strong> Origo</p>
+                        <p class="date-text"><strong>Dress Code:</strong> Your Favourite style</p>
+                        <hr class="gold-line">
+                        <p class="invitation-footer"> I'll be waiting for you. ❤️</p>
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
+    <audio id="magic-music" src="assets/music.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
